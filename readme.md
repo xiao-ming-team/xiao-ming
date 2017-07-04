@@ -7,9 +7,3 @@ Stack:
  * Bootstrap
  * HTML
  * CSS
-
-Wocao:
- * chilema?
-
-Wocao2:
- * meichi
