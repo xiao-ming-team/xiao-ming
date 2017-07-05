@@ -11,31 +11,6 @@ Stack:
  * CSS
  * [NodesJS](https://nodejs.org/en/)
 
-## Getting started with Python and Flask for Web Development
-
-### Local Machine Setup
-
-Before we can begin develop on a local machine, we need to make sure all the required software are installed.
-
-* Python 3.x
-* Latest Browser: Chrome/Firefox/Edge
-* MySQL
-* python package: `virtualenv`
-* Code Editor: Visual Studio Code (recommended)
-* NodeJS 
-
-**Special notes for MacOS users:** [homebrew](https://brew.sh/) is highly recommended as package manager on MacOS.
-
-To install homebrew, execute the following bash command:
-
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-
-If you already have homebrew you can install python3 and MySQL by executing:
-
-    brew install mysql python
-
-
 ### Quick Tutorial of Python Virtual Environment `virtualenv`
 `pip` provides a simple way of adding new functionality to your projects by downloading packages and install them on your computer, which we can them `import` in python scripts. However, one package may need other packages to be able to work, so `pip` will also install extra packages that the `import`ed package is dependent on.
 
@@ -75,9 +50,57 @@ Last step: Deactiave the environment
 
 Deactiving restores python environment to system python. The terminal prompt will no longer have (project-name). Or you can close the terminal.
 
+
+## Getting started with Python and Flask for Web Development
+
+### Local Machine Setup
+
+Before we can begin develop on a local machine, we need to make sure all the required software are installed.
+
+* Python 3.x
+* Latest Browser: Chrome/Firefox/Edge
+* MySQL
+* python package: `virtualenv`
+* Code Editor: Visual Studio Code (recommended)
+* NodeJS 
+
+**Special notes for MacOS users:** [homebrew](https://brew.sh/) is highly recommended as package manager on MacOS.
+
+To install homebrew, execute the following bash command:
+
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+
+If you already have homebrew you can install python3 and MySQL by executing:
+
+    brew install mysql python
+
 ### Step up database (MySQL)
 
 For development, a local SQLite database is sufficient
 
 ## Frontend
 To keep it simple, we will start with Bootstrap and jQuery. If more dynamic features are needed, we will migrate to ReactJS.
+
+
+## Setup Server Side Development Environment
+
+step 1: Make a folder and create a new `virtualenv`
+
+    mkdir xiao-ming-project
+    cd xiao-ming-project
+    virtualenv -p python3 .
+    source bin/activate
+
+step 2: check out code from source control
+
+    git clone https://github.com/xiao-ming-team/xiao-ming
+
+step 3: Install dependencies
+
+    cd xiao-ming
+    pip install -r requirements.txt
+
+## Setup Client Side Development Environment
+
+TBC
