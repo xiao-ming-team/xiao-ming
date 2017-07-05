@@ -1,10 +1,12 @@
-from flask import Flask
+from flask import Flask, render_template
 
-app = Flask("xiao-ming")
+app = Flask(__name__)
+
+app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 @app.route("/")
 def index():
-    return "hello world"
+    return render_template("index.html")
 
 
 if __name__ == "__main__":

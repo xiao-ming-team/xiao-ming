@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+    <head>
+        {% block head %}
+        <link href="{{ url_for('static', filename='site.css') }}" rel="stylesheet" />
+        <title>Xiao Ming</title>
+        {% endblock %}
+    </head>
+    <body>
+        {% block content %}
+        Stuff
+        {% endblock %}
+    </body>
+</html>
