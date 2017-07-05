@@ -12,16 +12,16 @@ Stack:
  * [NodesJS](https://nodejs.org/en/)
 
 ### Quick Tutorial of Python Virtual Environment `virtualenv`
-`pip` provides a simple way of adding new functionality to your projects by downloading packages and install them on your computer, which we can them `import` in python scripts. However, one package may need other packages to be able to work, so `pip` will also install extra packages that the `import`ed package is dependent on.
+`pip3` provides a simple way of adding new functionality to your projects by downloading packages and install them on your computer, which we can them `import` in python scripts. However, one package may need other packages to be able to work, so `pip3` will also install extra packages that the `import`ed package is dependent on.
 
  Sometimes two packages will depened on the same parent package but one may need a different version to the other. This can cause problems because newer version will override older version. One package may end up with errors at runtime. We need a way to isolate packages and their dependencies.
 
  `virtualenv` is created for this purpose.
  Install with command:
 
-    sudo pip install virtualenv
+    sudo pip3 install virtualenv
 
-`virtualenv` works by creating a local folder with a copy of the python installation we have on the machine. When we run `pip install`, the packages will be installed in the local folder. We can create an environment for each python project, each project will have its own environment to execute python code from.
+`virtualenv` works by creating a local folder with a copy of the python installation we have on the machine. When we run `pip3 install`, the packages will be installed in the local folder. We can create an environment for each python project, each project will have its own environment to execute python code from.
 
 Step 0: make a folder which will contain our project
 
@@ -40,9 +40,9 @@ The terminal prompt will change to (project-name) when you activate a `virtualen
 
 Step 3: install packages
 
-    pip install nose2 flask sqlalchemy
+    pip3 install nose2 flask sqlalchemy
 
-**Notice** you don't put `sudo` before `pip install`
+**Notice** you don't put `sudo` before `pip3 install`
 
 Last step: Deactiave the environment 
 
@@ -99,7 +99,7 @@ step 2: check out code from source control
 step 3: Install dependencies
 
     cd xiao-ming
-    pip install -r requirements.txt
+    pip3 install -r requirements.txt
 
 ## Setup Client Side Development Environment
 
