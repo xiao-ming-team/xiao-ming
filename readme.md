@@ -101,6 +101,12 @@ step 3: Install dependencies
     cd xiao-ming
     pip3 install -r requirements.txt
 
+Step 4: Run the server
+
+    python3 app/server.py
+
+Open the browser to [http://localhost:5000](http://localhost:5000), you should see the home page.
+
 ## Setup Client Side Development Environment
 
 TBC
